@@ -66,6 +66,7 @@ public class FirstActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent("com.example.bodysoul.activity.ACTION_START");
+                intent.addCategory("com.example.bodysoul.activity.MY_CATEGORY");
                 startActivity(intent);
             }
         });
