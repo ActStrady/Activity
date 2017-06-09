@@ -24,4 +24,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Button Ying" />
+    <Button
+        android:id="@+id/buton_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button Call" />
 </LinearLayout>

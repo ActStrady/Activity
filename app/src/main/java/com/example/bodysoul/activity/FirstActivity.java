@@ -1,6 +1,7 @@
 package com.example.bodysoul.activity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -67,6 +68,16 @@ public class FirstActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent("com.example.bodysoul.activity.ACTION_START");
                 intent.addCategory("com.example.bodysoul.activity.MY_CATEGORY");
+                startActivity(intent);
+            }
+        });
+        // Call Intent按钮
+        Button buttoncall = (Button) findViewById(R.id.buton_call);
+        buttoncall.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:10000"));
                 startActivity(intent);
             }
         });
