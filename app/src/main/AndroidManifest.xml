@@ -21,7 +21,6 @@
         <activity android:name=".SecondActivity">
             <intent-filter>
                 <action android:name="com.example.bodysoul.activity.ACTION_START" />
-
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="com.example.bodysoul.activity.MY_CATEGORY" />
             </intent-filter>
